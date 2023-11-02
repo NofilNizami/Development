@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <title>Best Ecommerce Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img src="https://simplexts.net/wp-content/themes/simplex/assets/img/main-logo.png" alt="">
+        </div>
+
+
+        <div class="navbar">
+            <ul>
+                <li>Solutions <i class="fa-solid fa-caret-down"></i></li>
+                <li>Products <i class="fa-solid fa-caret-down"></i></li>
+                <li>Services <i class="fa-solid fa-caret-down"></i></li>
+                <li>Blogs</li>
+                <li>Careers</li>
+                <li>About Us</li>
+                <li>SimpleX News</li>
+            </ul>
+        </div>
+        
+        <div class="dropdown">
+            <div class="dropdowni" onclick="show()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div style="display: none;" class="dropdownbox">
+                <ul>
+                    <li>Solutions</li>
+                    <li>Products</li>
+                    <li>Services</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                    <li>About Us</li>
+                    <li>SimpleX News</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="button">
+            <button>Contact Us</button>
+        </div>
+    </nav>
+
+
+
+<main>
+    <div class="banner1">
+        <div class="title">
+            <h1>Transforming Restaurants Into Digital Powerhouse!</h1>
+        </div>
+        <div class="content">
+            <div class="left">
+                <ul>
+                    <li>
+                        <img src="https://simplexts.net/wp-content/uploads/2022/12/AutomateyourRestaurant.png" alt="">
+                        Automate Your Restaurant
+                    </li>
+                    <li>
+                        <img src="https://simplexts.net/wp-content/uploads/2022/12/Grow.svg" alt="">
+                        Grow Your Customers Base
+                    </li>
+                    <li>
+                        <img src="https://simplexts.net/wp-content/uploads/2022/12/InventoryCloudKitchenManagement.png" alt="">
+                        Inventory Management
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <img src="https://simplexts.net/wp-content/uploads/2022/12/Multi.svg" alt="">
+                        Multi Brands, Multi Country 
+                    </li>
+                    <li>
+                        <img src="https://simplexts.net/wp-content/uploads/2022/12/SecureyourPayments.png" alt="">
+                        Secure Your Payments
+                    </li>
+                    <li>
+                        <img src="https://simplexts.net/wp-content/uploads/2022/12/AutomateyourRestaurant.png" alt="">
+                        Your Own Branded Mobile App & Webstore
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner2">
+        <img  src="https://simplexts.net/wp-content/uploads/2023/05/Untitled-design-79.png" alt="">
+    </div>
+</main>
+
+
+
+<div class="heading">
+    <h2>Trusted By Leading Brands</h2>
+    <p>Take advantage of this turnkey ecommerce solution, improve top and bottom lines</p>
+</div>
+
+
+<div class="logos">
+    <ul>
+        <li> <img src="https://simplexts.net/wp-content/uploads/2022/12/image-4-1.webp"></li>
+        <li> <img src="https://simplexts.net/wp-content/uploads/2022/12/image-1-1.webp" alt=""> </li>
+        <li><img src="https://simplexts.net/wp-content/uploads/2022/12/image-6.webp" alt=""></li>
+        <li><img src="https://simplexts.net/wp-content/uploads/2022/12/image-scaled-e1671371506360.webp" alt=""></li>
+        <li><img src="https://simplexts.net/wp-content/uploads/2022/12/Face.png" alt=""></li>
+        <li><img src="https://simplexts.net/wp-content/uploads/2022/12/image-3.webp" alt=""></li>
+        <li><img src="https://simplexts.net/wp-content/uploads/2022/12/image-2-1.webp" alt=""></li>
+    </ul>
+</div>
+
+<div class="video">
+<video src="https://player.vimeo.com/progressive_redirect/playback/868589497/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=d04d456d9f2c67cc9da989159b1942ecf449f6faa674160baacf7589b6e0a8dc" controls play></video>
+</div>
+
+
+<!-- Services -->
+<div class="h1">
+<h1>Our Services</h1>
+</div>
+
+<!-- Services details -->
+
+<div class="services">
+    <div class="leftservices">
+        <h2>Personalize your customer's experience through our ground breaking ecommerce solution</h2>
+        <p>A personalized commerce platform allows customers to shop in their own space the way they like it, with the same shopping experience across all channels, including web, app, contact center, and POS.</p>
+
+        <div class="buttons">
+            <button>BOOK A DEMO</button>
+            <button>LEARN MORE</button>
+        </div>
+    </div>
+    <div class="rightservices">
+        <img src="https://simplexts.net/wp-content/uploads/2023/03/12-scaled.jpg" alt="">
+    </div>
+</div>
+
+<hr>
+
+<div class="services">
+
+    <div class="rightservices">
+        <img src="https://simplexts.net/wp-content/uploads/2022/12/Brand-pic-scaled.webp" alt="">
+    </div>
+
+    <div class="leftservices">
+        <h2>Improve operational excellence & internal audit
+        </h2>
+        <p>Simplex GO helps the operators in the restaurants to enforce the brand standards and auditors to validate ops standards.</p>
+        <h2>Save your operation expenses</h2>
+        <p>With multi-brand managing feature, you can save your operations expenses and focus on delivery and restaurants.</p>
+
+        <div class="buttons">
+            <button>BOOK A DEMO</button>
+            <button>LEARN MORE</button>
+        </div>
+    </div>
+
+</div>
+
+<hr>
+
+
+<div class="services">
+    <div class="leftservices">
+        <h2>Online Ordering System</h2>
+        <p>Let your customers order online for delivery, click & collect, & dine in.</p>
+        <h2>Your own branded Mobile App</h2>
+        <p>A branded mobile app is a powerful platform for attracting and engaging customers with a personalized shopping experience.</p>
+        <h2>Your own branded website</h2>
+        <p>A great restaurant website can attract new customers and raise the overall profile of your restaurant.</p>
+
+        <div class="buttons">
+            <button>BOOK A DEMO</button>
+            <button>LEARN MORE</button>
+        </div>
+    </div>
+    <div class="rightservices">
+        <img src="https://simplexts.net/wp-content/uploads/2022/12/Online-Ordering-for-Home-Page.webp" alt="">
+    </div>
+</div>
+
+<hr>
+
+<div class="services">
+
+    <div class="rightservices">
+        <img src="https://simplexts.net/wp-content/uploads/2022/12/POSs.webp" alt="">
+    </div>
+
+    <div class="leftservices">
+        <h2>POS Integration
+        </h2>
+        <p>Reduce errors and increase speed of orders with POS integration, resulting in improved customer experience.</p>
+        <h2>Secure your payments
+        </h2>
+
+        <p>Secured payments into your own merchant account or our merchant account with weekly payouts.</p>
+
+        <div class="buttons">
+            <button>BOOK A DEMO</button>
+            <button>LEARN MORE</button>
+        </div>
+    </div>
+
+</div>
+
+<hr>
+
+
+
+<div class="heading">
+    <h2>Our Projects</h2>
+    <p>Having bundle of experience about making latest tech project that helpful in modern era in digital tasks.</p>
+</div>
+
+
+
+
+<div class="imagesdiv">
+    <div class="imagesdiv1">
+        <img src="https://simplexts.net/wp-content/uploads/2022/12/OPTP.webp" alt="">
+    </div>
+    <div class="imagesdiv1">
+        <img src="https://simplexts.net/wp-content/uploads/2022/12/More-cafe.webp" alt="">
+    </div>
+    <div class="imagesdiv1">
+        <img src="https://simplexts.net/wp-content/uploads/2022/12/tortilla-home.webp" alt="">
+    </div>
+</div>
+
+
+
+<div class="heading">
+    <h2>Need More?</h2>
+    <p>We've got you covered!</p>
+</div>
+
+
+
+<!-- Need More -->
+
+
+<div class="needmore">
+    <div class="needmore1">
+        <img src="https://simplexts.net/wp-content/uploads/2023/10/simplexts.net-7-1.png" alt="">
+
+        <div class="needmore-text">
+        <h2>How Order Management Systems Can Help...
+        </h2>
+
+        <p>Introduction In the fast-paced world of e-commerce and retail, efficiency is the name of the…</p>
+
+        <button>Read More</button>
+        </div>
+    </div>
+
+
+    <div class="needmore1">
+        <img src="https://simplexts.net/wp-content/uploads/2023/10/come-and-experience-the-world-of-digital-marketing-1.png" alt="">
+
+        <div class="needmore-text">
+        <h2>Marketing Automation for Restaurants:..
+        </h2>
+
+        <p>In today’s digital age, where competition in the restaurant industry is fiercer than ever, staying…
+        </p>
+
+        <button>Read More</button>
+        </div>
+    </div>
+
+
+    <div class="needmore1">
+        <img src="https://simplexts.net/wp-content/uploads/2023/10/Your-paragraph-text-1.png" alt="">
+
+        <div class="needmore-text">
+        <h2>Restaurant Mobile Payments: 3 Ways to...
+        </h2>
+
+        <p>In today’s fast-paced world, convenience is the name of the game. When it comes to…
+        </p>
+
+        <button>Read More</button>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="heading">
+    <h2>Contact Us</h2>
+    <p>Having a query or want a cup of tea with us?</p>
+    <p>Fill in the form and one of our representative will get back to you shortly.</p>
+</div>
+
+
+
+
+
+<!-- Form -->
+<div class="forum">
+    <div class="forum1">
+
+        <div class="forumchild">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="forumchild-child">
+                <h2>Location:</h2>
+                <p>Sydney, Australia</p>
+            </div>
+        </div>
+
+
+        <div class="forumchild">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="forumchild-child">
+                <h2>Email:</h2>
+                <p>hello@simplexts.net</p>
+            </div>
+        </div>
+
+
+        <div class="forumchild">
+            <div class="forumchild-child"></div>
+        </div>
+
+
+    </div>
+
+
+    <form>
+        <div class="inputfield">
+
+        <input type="text" placeholder="Your Name" class="text">
+
+        <input type="email" placeholder="Email Address" class="email" >
+
+    </div>
+
+        <input type="text" placeholder="Subject" class="subject" >
+
+        <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+
+        <button>Send Message</button>
+    </form>
+</div>
+
+
+
+<footer>
+    <div class="footermenu">
+
+        <div class="footermenu-child">
+            <h2>Solutions</h2>
+            <ul>
+                <li>Omnichannel B2C Ecommerce</li>
+                <li>Ecommerce Marketplace</li>
+                <li>CRM Automation</li>
+                <li>Actionable Insights</li>
+                <li>Operational Compliance And Assurance</li>
+            </ul>
+        </div>
+
+
+        <div class="footermenu-child">
+            <h2>Products</h2>
+            <ul>
+                <li>Branded Mobile App</li>
+                <li>Personalized Loyalty</li>
+                <li>Order Management System</li>
+                <li>Operations Management System</li>
+            </ul>
+        </div>
+
+
+        <div class="footermenu-child">
+            <h2>About Us</h2>
+            <ul>
+                <li>Blogs</li>
+                <li>Careers</li>
+                <li>Privacy Policy</li>
+                <li>Terms</li>
+            </ul>
+        </div>
+
+
+        <div class="footermenu-child">
+            <h2>Contact</h2>
+            <ul>
+                <li>Book A Demo</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <hr>
+
+
+
+    <div class="footermenu2">
+        <div class="footermenu2-paragraph">
+        <p>2023 © All Rights Reserved | Simplex Technology Solutions</p>
+    </div>
+
+    <div class="footermenu2-logos">
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    </div>
+</footer>
+
+
+
+    <script>
+        function show(){
+            var courses = document.querySelector('.dropdownbox');
+            if (courses.style.display == "flex") {
+                courses.style.display = "none";
+            } else {
+                courses.style.display = "flex";
+            }
+        }
+
+
+    </script>
+</body>
+</html>
